@@ -1,11 +1,19 @@
 # Hangman
+
 import random
+
 def hangman():
+
     word=['hello','opretor','commen','help','stole','phone','mobile','switch','shirt','book','science','chair']
+    
     get_word=random.choice(word)
+    
     g=list(get_word)
+    
     p=[]
+    
     guassing_word=list(get_word)
+    
     index_store=[]
     for i in range(len(get_word)//2):
         j=random.randint(0,len(get_word)-1)
